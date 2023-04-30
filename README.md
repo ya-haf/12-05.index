@@ -1,8 +1,8 @@
 ## Задание 1
 
-SELECT  SUM(tt.DATA_LENGTH) , SUM(tt.INDEX_LENGTH), CONCAT(  ROUND ((SUM(tt.INDEX_LENGTH) / SUM(tt.DATA_LENGTH)) *100), ' %')  AS proc  
+__SELECT  SUM(tt.DATA_LENGTH) , SUM(tt.INDEX_LENGTH), CONCAT(  ROUND ((SUM(tt.INDEX_LENGTH) / SUM(tt.DATA_LENGTH)) *100), ' %')  AS proc  
 FROM INFORMATION_SCHEMA.TABLES tt  
-WHERE  tt.TABLE_SCHEMA = 'sakila'
+WHERE  tt.TABLE_SCHEMA = 'sakila'__
 
 ## Задание 2
 Убрать distinct, over (partition by c.customer_id, f.title), film f  
